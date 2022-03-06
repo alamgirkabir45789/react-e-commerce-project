@@ -10,6 +10,12 @@ const Navbar = () => {
         <li>
           <Link to="/">BanglaExpress</Link>
         </li>{" "}
+        <li>
+          <Link to="/">About</Link>
+        </li>{" "}
+        <li>
+          <Link to="/">Contact</Link>
+        </li>{" "}
       </ul>
       <ul className="right">
         <li>

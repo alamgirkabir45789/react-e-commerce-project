@@ -4,6 +4,7 @@ import { useNavigate } from "react-router";
 import StripeCheckout from "react-stripe-checkout";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { Card } from "reactstrap";
 import { CartContext } from "../global/CartContext";
 toast.configure();
 const Cart = () => {
@@ -28,7 +29,7 @@ const Cart = () => {
     }
   };
   return (
-    <div className="cart-container">
+    <Card className="cart-container">
       <div className="cart-details" style={{ marginTop: "100px" }}>
         {shoppingCart.length > 0 ? (
           shoppingCart.map((cart) => (
@@ -108,7 +109,7 @@ const Cart = () => {
       ) : (
         ""
       )}
-    </div>
+    </Card>
   );
 };
 

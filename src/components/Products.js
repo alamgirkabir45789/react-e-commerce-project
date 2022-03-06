@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { Card } from "reactstrap";
 import { CartContext } from "../global/CartContext";
 import { ProductContext } from "../global/ProductContext";
 import Banner from "./Banner";
@@ -7,7 +8,7 @@ const Products = () => {
   const { dispatch } = useContext(CartContext);
 
   return (
-    <div className="container">
+    <Card className="container">
       <div>
         <Banner />
       </div>
@@ -38,7 +39,7 @@ const Products = () => {
           </div>
         ))}
       </div>
-    </div>
+    </Card>
   );
 };
 
